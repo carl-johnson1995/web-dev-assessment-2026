@@ -1,21 +1,20 @@
+/* ====== RESET ====== */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #ffffff;
 }
 
+/* ====== HEADER ====== */
 header {
     background: #17072b;
     color: white;
-    padding: 20px;
     text-align: center;
+    padding: 20px 0;
 }
 
 header h1 {
-    font-family: Tahoma, sans-serif;
-    font-weight: 700;
-    margin: 0;
     font-size: 40px;
+    margin: 0;
 }
 
 nav ul {
@@ -32,72 +31,70 @@ nav li {
     font-weight: bold;
 }
 
+/* ====== MAIN LAYOUT ====== */
 main {
-    display: flex;
-    justify-content: center;
-    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 40px;
+    padding: 40px;
 }
 
-.welcome {
-    width: 500px;
-}
-
+/* ====== WELCOME ====== */
 .welcome h2 {
-    font-family: Tahoma, sans-serif;
-    font-weight: 700;
-    font-size: 28px;
+    font-size: 32px;
+    margin-bottom: 10px;
 }
 
 .welcome p {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #000;
+    font-size: 18px;
+    line-height: 1.6;
 }
 
 .welcome img {
     width: 100%;
+    height: auto;
+    border-radius: 6px;
     margin-top: 20px;
-    border-radius: 5px;
 }
 
+/* ====== LINE UP ====== */
 .lineup {
     background: #172d67;
     color: white;
-    padding: 20px;
-    width: 300px;
-    border-radius: 5px;
+    padding: 25px;
+    border-radius: 8px;
 }
 
 .lineup h2 {
-    font-family: Tahoma, sans-serif;
-    font-weight: 700;
-    font-size: 26px;
+    font-size: 30px;
+    margin-top: 0;
 }
 
 .lineup ul {
     list-style: none;
     padding: 0;
-    margin-top: 10px;
     margin-bottom: 20px;
 }
 
 .lineup li {
-    margin-bottom: 10px;
-    font-size: 16px;
+    font-size: 18px;
+    margin-bottom: 12px;
 }
 
+/* ====== LINE UP IMAGES ====== */
 .lineup-images {
     display: flex;
-    flex-direction: column;
-    gap: 15px;
+    flex-direction: row;
+    gap: 20px;
 }
 
 .lineup-images img {
     width: 100%;
-    border-radius: 5px;
+    height: auto;
+    border-radius: 6px;
 }
 
+/* ====== FOOTER ====== */
 footer {
     background: #8c15e9;
     color: white;
